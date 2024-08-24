@@ -1,3 +1,7 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     margin: 0;
     font-family: "New Amsterdam", sans-serif;
@@ -13,7 +17,7 @@ body {
     background-color: #000; /* Fallback color if image doesn't cover the viewport */
 
     justify-content: center; /* จัดกึ่งกลางในแนวนอน */
-    align-items: center;    /* จัดกึ่งกลางในแนวตั้ง */
+    /*align-items: center;*/    /* จัดกึ่งกลางในแนวตั้ง */
 
 }
 
@@ -74,6 +78,8 @@ body {
     text-decoration: none;
     /*font-weight: bold;*/
     font-size: 20px;
+    -webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
 }
 
 .top-bar nav ul li a:hover {

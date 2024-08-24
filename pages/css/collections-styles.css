@@ -1,14 +1,25 @@
+/* disable scrollbar */
+::-webkit-scrollbar {
+    display: none;
+}
+
 body {
     margin: 0;
     font-family: "New Amsterdam", sans-serif;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(img/firstpic.png);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/firstpic.png);
     margin: 0;
-    padding: 0;
+    padding-top: 10%;
+    padding-bottom: 0;
+
     background-size:cover;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent image repetition */
     background-attachment: fixed; /* Fix the background image in place */
     background-color: #000; /* Fallback color if image doesn't cover the viewport */
+
+    justify-content: center; /* จัดกึ่งกลางในแนวนอน */
+    /*align-items: center;*/    /* จัดกึ่งกลางในแนวตั้ง */
+
 }
 
 .top-bar {
@@ -76,24 +87,28 @@ body {
     text-shadow: 2px 2px 6px #ffffff;
 }
 
-.content{
-    color: #fff;
-    /* background-color:rgba(0, 0, 0, 0.5); */
-    border-radius: 30px;
+.container1{
+    background-color:rgba(0, 255, 21, 0.5);
+    width: 60vw;
+    height: auto;
 
-    padding-left: 40px;
-    padding-right: 40px;
-
-    width: fit-content;
-    height: fit-content;
-    position: absolute;
+    /* ทำให้อยู่ตรงกลาง */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 100px;
-    text-align: center;
+    position: relative;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding: 50px;
+    
+    border-radius: 10px;
+    
 }
 
-.content p{
+.container1 h1{
+    color: white;
+    text-align: center;
     font-size: 60px;
+    font-weight: lighter;
 }
