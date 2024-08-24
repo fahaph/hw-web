@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    font-family: "New Amsterdam", sans-serif;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/firstpic.png);
+    margin: 0;
+    padding-top: 40%;
+    padding-bottom: 0;
+
+    background-size:cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fix the background image in place */
+    background-color: #000; /* Fallback color if image doesn't cover the viewport */
+
+    justify-content: center; /* จัดกึ่งกลางในแนวนอน */
+    align-items: center;    /* จัดกึ่งกลางในแนวตั้ง */
+
+}
+
+.top-bar {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed; /* ใช้ static ให้ตัว top bar อยู่นิ่ง ๆ */
+    width: 100%;
+    z-index: 99;
+    top: 0;
+}
+
+.top-bar container {
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed */
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.top-bar img{
+    width: 60px;
+    height: 60px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.top-bar img:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.top-bar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-bar nav ul li {
+    margin-left: 50px;
+}
+
+.top-bar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    font-size: 20px;
+}
+
+.top-bar nav ul li a:hover {
+    text-shadow: 2px 2px 6px #ffffff;
+}
+
+.container1{
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    width: 60vw;
+    height: auto;
+
+    /* ทำให้อยู่ตรงกลาง */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: relative;
+
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+
+    border-radius: 10px;
+    
+}
+
+.container1 h1{
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.content1{
+    width: 100%;
+    height: 90px;
+    margin-bottom: 30px;
+
+}
+
+.content2{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    height: 90px;
+
+    /* ทำให้ระยะห่างเท่ากัน และพอดีกับขอบ */
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.content3{
+    width: 100%;
+    height: 90px;
+
+    /* ทำให้ระยะห่างเท่ากัน และพอดีกับขอบ */
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.content4{
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+
+    /* ทำให้ระยะห่างเท่ากัน และพอดีกับขอบ */
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+    padding: 10px;
+}
+
+.content4-1{
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 45%;
+    height: fit-content;
+
+    padding-top: 20px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.content4-1-1{
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 97%;
+    height: auto;
+
+    /* ทำให้ระยะห่างเท่ากัน และพอดีซ้ายขวา */
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+    padding: 10px;
+    padding-bottom: 10px;
+}
+
+.content4-1 h1{
+    font-size: 50px;
+    color: white;
+}
+
+.content4-1 h2{
+    font-size: 25px;
+    color: white;
+}
+
+.img-content{
+    height: 90px;
+    width: 90px;
+    float: left;
+}
+
+.text-content{
+    color: white;
+    /* background-color: aqua; */
+
+    width: auto;
+    height: 13%;
+
+    float: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.text-content p1{
+    font-size: 50px;
+    color: white;
+}
+
+.text-content p2{
+    font-size: 30px;
+    color: rgba(255, 255, 255, 0.8);
+}

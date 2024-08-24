@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family: "New Amsterdam", sans-serif;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/firstpic.png);
+    margin: 0;
+    padding: 0;
+    background-size:cover;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    background-attachment: fixed; /* Fix the background image in place */
+    background-color: #000; /* Fallback color if image doesn't cover the viewport */
+}
+
+.top-bar {
+    background-color: #000000;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed; /* ใช้ static ให้ตัว top bar อยู่นิ่ง ๆ */
+    width: 100%;
+    z-index: 99;
+    top: 0;
+}
+
+.top-bar container {
+    max-width: 1200px;
+    height: 80px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed */
+}
+
+.top-bar h1 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: lighter;
+}
+
+.top-bar img{
+    width: 60px;
+    height: 60px;
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+}
+
+.top-bar img:hover{
+    -webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+.top-bar nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.top-bar nav ul li {
+    margin-left: 50px;
+}
+
+.top-bar nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    /*font-weight: bold;*/
+    font-size: 20px;
+}
+
+.top-bar nav ul li a:hover {
+    text-shadow: 2px 2px 6px #ffffff;
+}
+
+.content{
+    color: #fff;
+    /* background-color:rgba(0, 0, 0, 0.5); */
+    border-radius: 30px;
+
+    padding-left: 40px;
+    padding-right: 40px;
+
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    text-align: center;
+}
+
+.content p{
+    font-size: 60px;
+}
