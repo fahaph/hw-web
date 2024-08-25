@@ -121,3 +121,22 @@ body {
 .text-content p{
     text-align: center;
 }
+
+.text-content a{
+    font-size: 30;
+    color: rgba(255, 255, 255, 0.8);
+
+    display: block;
+    margin: 0 auto;        /* Center horizontally */
+    text-align: center;    /* Center text inside the block */
+    padding: 10px;
+
+    -webkit-transition: .2s ease-in-out;
+	transition: .2s ease-in-out;
+
+    font-weight: lighter;
+}
+
+.text-content a:hover{
+    text-shadow: 0px 0px 10px #ffffff;
+}
