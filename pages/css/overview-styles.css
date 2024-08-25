@@ -7,17 +7,19 @@ body {
     font-family: "New Amsterdam", sans-serif;
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(/img/firstpic.png);
     margin: 0;
-    padding-top: 40%;
+    padding-top: 10%;
     padding-bottom: 0;
 
-    background-size:cover;
+    /* background-size:cover; */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent image repetition */
     background-attachment: fixed; /* Fix the background image in place */
     background-color: #000; /* Fallback color if image doesn't cover the viewport */
-
+    
     justify-content: center; /* จัดกึ่งกลางในแนวนอน */
-    /*align-items: center;*/    /* จัดกึ่งกลางในแนวตั้ง */
+    align-items: center;    /* จัดกึ่งกลางในแนวตั้ง */
+
+    display: flex;
 
 }
 
@@ -90,12 +92,6 @@ body {
     /* background-color:rgba(0, 0, 0, 0.5); */
     width: 60vw;
     height: auto;
-
-    /* ทำให้อยู่ตรงกลาง */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
 
     padding-top: 20px;
     padding-left: 50px;
@@ -195,6 +191,11 @@ body {
 .content4-1 h2{
     font-size: 25px;
     color: white;
+}
+
+.content4-1-1 img{
+    height: 33%;
+    width: 33%;
 }
 
 .img-content{

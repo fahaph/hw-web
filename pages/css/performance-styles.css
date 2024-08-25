@@ -17,7 +17,9 @@ body {
     background-color: #000; /* Fallback color if image doesn't cover the viewport */
 
     justify-content: center; /* จัดกึ่งกลางในแนวนอน */
-    /*align-items: center;*/    /* จัดกึ่งกลางในแนวตั้ง */
+    align-items: center;    /* จัดกึ่งกลางในแนวตั้ง */
+
+    display: flex;
 
 }
 
@@ -90,12 +92,6 @@ body {
     background-color:rgba(0, 255, 21, 0.5);
     width: 60vw;
     height: auto;
-
-    /* ทำให้อยู่ตรงกลาง */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative;
 
     padding-top: 20px;
     padding-bottom: 20px;
