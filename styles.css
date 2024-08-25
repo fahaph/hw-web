@@ -82,7 +82,7 @@ body {
 }
 
 .top-bar nav ul li a:hover {
-    text-shadow: 2px 2px 6px #ffffff;
+    text-shadow: 0px 0px 10px #ffffff;
 }
 
 .content{
