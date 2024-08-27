@@ -48,6 +48,7 @@ body {
 }
 
 .top-bar img{
+    float: left;
     width: 60px;
     height: 60px;
     -webkit-transform: scale(1);
@@ -76,7 +77,7 @@ body {
     color: #fff;
     text-decoration: none;
     /*font-weight: bold;*/
-    font-size: 20px;
+    font-size: 1vw;
     -webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
@@ -102,7 +103,7 @@ body {
 }
 
 .content p{
-    font-size: 60px;
+    font-size: 3vw;
     align-items: center;
 }
 
@@ -123,7 +124,7 @@ body {
 }
 
 .text-content a{
-    font-size: 30;
+    font-size: 1vw;
     color: rgba(255, 255, 255, 0.8);
 
     display: block;

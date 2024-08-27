@@ -47,11 +47,12 @@ body {
 
 .top-bar h1 {
     margin: 0;
-    font-size: 60px;
+    font-size: 2vw;
     font-weight: lighter;
 }
 
 .top-bar img{
+    float: left;
     width: 60px;
     height: 60px;
     -webkit-transform: scale(1);
@@ -80,7 +81,7 @@ body {
     color: #fff;
     text-decoration: none;
     /*font-weight: bold;*/
-    font-size: 20px;
+    font-size: 1vw;
     -webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
@@ -120,7 +121,7 @@ body {
 
 .content0{
     /* background-color: rgb(63, 218, 32); */
-    width: auto;
+    width: 100%;
     height: auto;
 
     margin-bottom: 30px;
@@ -137,10 +138,9 @@ body {
 
 .content1{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 
-    /* background-color: goldenrod; */
-    width: auto;
+    width: 100%;
     height: auto;
 }
 
@@ -148,8 +148,9 @@ body {
     /*align-items: center; /*ตั้ง*/
     justify-content: center; /*นอน*/
     display: block;
+    float: left;
 
-    width: 25%;
+    width: 248px;
     height: auto;
     border-radius: 10px;
 
@@ -178,7 +179,7 @@ body {
 }
 
 .skin-show-case img{
-    width: 100%;
+    width: 90%;
     height: auto;
 
     display: flex;

@@ -52,6 +52,7 @@ body {
 }
 
 .top-bar img{
+    float: left;
     width: 60px;
     height: 60px;
     -webkit-transform: scale(1);
@@ -80,7 +81,7 @@ body {
     color: #fff;
     text-decoration: none;
     /*font-weight: bold;*/
-    font-size: 20px;
+    font-size: 1vw;
     -webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
