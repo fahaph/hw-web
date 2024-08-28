@@ -162,3 +162,16 @@ body {
 
 }
 
+.rank{ 
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+}
+
+.rank img{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+
