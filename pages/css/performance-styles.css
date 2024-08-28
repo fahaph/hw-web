@@ -90,7 +90,7 @@ body {
 }
 
 .container1{
-    background-color:rgba(0, 255, 21, 0.5);
+    /* background-color:rgba(0, 255, 21, 0.5); */
     width: 60vw;
     height: auto;
 
@@ -109,3 +109,56 @@ body {
     font-size: 60px;
     font-weight: lighter;
 }
+
+.content1{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    display: flex;
+    border-radius: 20px;
+}
+
+.content1 table{
+    width: 100%;
+    border-radius: 10px;
+    border-spacing: 0;
+    border-collapse: separate;
+    border-radius: 10px;
+    text-align: left;
+
+}
+
+.content1 td{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: lighter;
+    font-size: 25px;
+
+    height: 50px;
+
+    padding: 10px;
+}
+
+.content1 th{
+    background-color: rgba(70, 70, 70, 0.5);
+    color: white;
+    font-weight: lighter;
+    font-size: 16px;
+
+    padding: 10px;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* float: left; */
+
+    /* cursor: pointer; */
+
+}
+
+.sorting-image img{
+    width: 10px;
+    height: auto;
+    margin-left: 5px;
+
+    transition: transform 0.5s ease-in-out;
+
+}
+
