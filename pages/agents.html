@@ -25,7 +25,78 @@
     </header>
 
     <div class="container1">
-        <h1>Agents</h1>
+        <h1>Agents E9:A1</h1>
+
+        <div class="filter-buttons">
+            <button onclick="filterCards('Initiator')"> Initiator </button>
+            <button onclick="filterCards('Duelist')"> Duelist </button>
+            <button onclick="filterCards('Sentinel')"> Sentinel </button>
+            <button onclick="filterCards('Controller')"> Controller </button>
+            <button onclick="filterCards('')"> All </button>
+        </div>
+
+        <div class="content1">
+            <div id="agent-container">
+                <!-- agent will appended here -->
+            </div>
+        </div>
     </div>
+
+    <script src="agents.js"></script>
+
+    <script>
+        function filterCards(role) {
+            // Get all the cards
+            const cards = document.querySelectorAll('.card');
+
+            // Loop through each card
+            cards.forEach(card => {
+                // If the card's role matches the selected role, or if no role is selected (to show all)
+                if (card.getAttribute('data-role') === role || role === '') {
+                    card.style.display = 'inline-block'; // Show the card
+                } else {
+                    card.style.display = 'none'; // Hide the card
+                }
+            });
+        }
+    </script>
+
+    <script>
+        // filter by role
+        function displayCards(items) {
+            const cardsContainer = document.getElementById('agent-container');
+            cardsContainer.innerHTML = ''; // ล้างข้อมูลเก่าทั้งหมดใน container
+
+            items.forEach(item => {
+                const card = document.createElement('div');
+                card.className = 'agent-container';
+                card.innerHTML = `
+                    <img src="${item.img}" alt="${item.name}">
+                    <div class="agent-info-container">
+                        <span class="agent-name">${item.name}</span>
+                        <span class="agent-info">Role: ${item.role}</span>
+                        <span class="agent-info">Matches: ${item.match}</span>
+                        <span class="agent-info">Win: ${item.win}</span>
+                        <span class="agent-info">K/D: ${item.kd}</span>
+                        <span class="agent-info">HS: ${item.hs}</span>
+                    </div>
+                `;
+                cardsContainer.appendChild(card);
+            });
+        }
+
+        function filterCards(role) {
+            if (role === '') {
+                displayCards(agentItems); // แสดงทุกการ์ดหากเลือก "All"
+            } else {
+                const filteredItems = agentItems.filter(item => item.role === role);
+                displayCards(filteredItems); // แสดงการ์ดที่ตรงกับ role
+            }
+        }
+
+        // เริ่มต้นแสดงทุกการ์ด
+        displayCards(agentItems);
+    </script>
+
 </body>
 </html>

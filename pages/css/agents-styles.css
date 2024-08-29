@@ -91,15 +91,9 @@ body {
 }
 
 .container1{
-    background-color:rgba(0, 255, 21, 0.5);
+    /* background-color:rgba(0, 255, 21, 0.5); */
     width: 60vw;
     height: auto;
-
-    /* ทำให้อยู่ตรงกลาง */
-    /* top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: relative; */
 
     padding-top: 20px;
     padding-left: 50px;
@@ -115,4 +109,82 @@ body {
     text-align: center;
     font-size: 60px;
     font-weight: lighter;
+}
+
+.content1{
+    width: 100%;
+    height: auto;
+
+    /* background-color: rgb(47, 0, 255); */
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.agent-container {
+    width: 248px;
+    height: auto;
+
+    /* margin: 10px 0; */
+    padding: 10px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    /* border: 1px solid #ccc; */
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    display: block;
+    float: left;
+    /* align-items: center; */
+}
+.agent-container img {
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;         /* center */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.agent-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.agent-name {
+    color: white;
+    font-weight: lighter;
+    font-size: 30px;
+
+    margin-bottom: 15px;
+
+    text-align: center;
+}
+
+.agent-info {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: lighter;
+    margin-left: 20px;
+}
+
+.filter-buttons{
+    width: 100%;
+    height: auto;
+
+    margin-bottom: 30px;
+
+    text-align: center;
+}
+.filter-buttons button{
+    font-family: "New Amsterdam", sans-serif;
+    border: none;
+    border-radius: 5px;
+
+    padding: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
