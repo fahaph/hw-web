@@ -28,11 +28,25 @@
         <h1>Agents E9:A1</h1>
 
         <div class="filter-buttons">
-            <button onclick="filterCards('Initiator')"> Initiator </button>
-            <button onclick="filterCards('Duelist')"> Duelist </button>
-            <button onclick="filterCards('Sentinel')"> Sentinel </button>
-            <button onclick="filterCards('Controller')"> Controller </button>
-            <button onclick="filterCards('')"> All </button>
+            <button onclick="filterCards('Initiator'); changeColor(this)">
+                <img src="../img/Initiator.webp" alt="">
+                Initiator
+            </button>
+            <button onclick="filterCards('Duelist'); changeColor(this)">
+                <img src="../img/Duelist.webp" alt="">
+                Duelist
+            </button>
+            <button onclick="filterCards('Sentinel'); changeColor(this)">
+                <img src="../img/Sentinel.webp" alt="">
+                Sentinel
+            </button>
+            <button onclick="filterCards('Controller'); changeColor(this)">
+                <img src="../img/Controller.webp" alt="">
+                Controller
+            </button>
+            <button onclick="filterCards(''); changeColor(this)">
+                All
+            </button>
         </div>
 
         <div class="content1">
@@ -75,7 +89,7 @@
                     <div class="agent-info-container">
                         <span class="agent-name">${item.name}</span>
                         <span class="agent-info">Role: ${item.role}</span>
-                        <span class="agent-info">Matches: ${item.match}</span>
+                        <span class="agent-info">Match: ${item.match}</span>
                         <span class="agent-info">Win: ${item.win}</span>
                         <span class="agent-info">K/D: ${item.kd}</span>
                         <span class="agent-info">HS: ${item.hs}</span>
@@ -96,6 +110,29 @@
 
         // เริ่มต้นแสดงทุกการ์ด
         displayCards(agentItems);
+    </script>
+
+    <script>
+        // change color button when it pressed
+        function changeColor(button) {
+
+            // Remove 'active' class from all buttons
+            const buttons = document.querySelectorAll('.filter-buttons button');
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            // Add 'active' class to the clicked button
+            button.classList.add('active');
+        }
+
+        // set default on button when loaded page
+        function autoChangeColorOnLoad() {
+            const buttons = document.querySelectorAll('.filter-buttons button');
+            const lastButton = buttons[buttons.length - 1];
+
+            // Add 'active' class to the last button
+            lastButton.classList.add('active');
+        }
+        window.onload = autoChangeColorOnLoad;
     </script>
 
 </body>
