@@ -219,10 +219,10 @@ const agentItems = [
     {
         name: "Vyse",
         role: "Sentinel",
-        match: "0",
-        win: "0.0%",
-        kd: "0.00",
-        hs: "0.0%",
+        match: "--",
+        win: "--%",
+        kd: "--",
+        hs: "--%",
         img: "../img/vyse.webp"
     },
 
