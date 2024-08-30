@@ -82,6 +82,7 @@ body {
     text-decoration: none;
     /*font-weight: bold;*/
     font-size: 1vw;
+    
     -webkit-transition: .2s ease-in-out;
 	transition: .2s ease-in-out;
 }
@@ -119,25 +120,23 @@ body {
 
     display: flex;
     flex-wrap: wrap;
+
+    justify-content: center;
 }
 
 .agent-container {
     width: 248px;
     height: auto;
 
-    /* margin: 10px 0; */
     padding: 10px;
     padding-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 20px;
 
-    /* border: 1px solid #ccc; */
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.5);
 
-    display: block;
-    float: left;
 }
 .agent-container img {
     width: 100px;
@@ -192,6 +191,7 @@ body {
     padding: 5px;
     padding-left: 5px;
     padding-right: 5px;
+    margin-bottom: 5px;
 
     cursor: pointer;
 

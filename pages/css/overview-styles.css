@@ -10,7 +10,7 @@ body {
     padding-top: 10vh;
     padding-bottom: 0;
 
-    /* background-size:cover; */
+    background-size:cover;
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent image repetition */
     background-attachment: fixed; /* Fix the background image in place */
